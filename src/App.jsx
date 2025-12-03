@@ -1,7 +1,7 @@
-import ReactImg from './assets/react-core-concepts.png';
+
 import Header from './components/Header.jsx';
-import componentsImg from './assets/components.png';
-import CoreConcept from './components/CoreConcept.jsx'
+import CoreConcept from './components/CoreConcept.jsx';
+import { CORE_CONCEPTS } from './data.js';
 
 
 function App() {
@@ -12,15 +12,10 @@ function App() {
         <section id='core-concepts'>
          <h2>Core concept</h2>
 <ul>
-<CoreConcept 
-title = "components"
-description = "the core ui"
-image = {componentsImg}
-
-/>
-<CoreConcept />
-<CoreConcept />
-<CoreConcept />
+<CoreConcept {...CORE_CONCEPTS[0]} />
+<CoreConcept {...CORE_CONCEPTS[1]}/>
+<CoreConcept {...CORE_CONCEPTS[2]}/>
+<CoreConcept {...CORE_CONCEPTS[3]}/>
 </ul>
         </section>
         
@@ -29,4 +24,4 @@ image = {componentsImg}
   );
 }
 
-export default App;
+export default App();

@@ -1,3 +1,4 @@
+import ReactImg from '../assets/react-core-concepts.png';
 const reactDescriptions = ['Fundamental', 'Crucial', 'Core'];
 
 function genRandomInt(max) {
