@@ -1,7 +1,7 @@
 
 import Header from './components/Header.jsx';
 import CoreConcept from './components/CoreConcept.jsx';
-import { CORE_CONCEPTS } from './data.js';
+import {CORE_CONCEPTS} from './data.js';
 
 
 function App() {
@@ -9,7 +9,7 @@ function App() {
     <div>
       <Header />
       <main>
-        <section id='core-concepts'>
+        <section id ='core-concepts'>
          <h2>Core concept</h2>
 <ul>
 <CoreConcept {...CORE_CONCEPTS[0]} />
